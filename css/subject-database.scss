@@ -11,7 +11,6 @@ html,body{
   position: fixed;
   left:0;
   top:0;
-  z-index: 999;
 }
 .logo{
   width: 4%;
@@ -301,6 +300,7 @@ ul p{
 }
 .right .mail{
   color: #a2e4e6;
+  margin-top: 50%;
 }
 .mail a{
   text-decoration: underline;
@@ -308,9 +308,8 @@ ul p{
 .right .icon{
   width: 15%;
   height: 30px;
-  margin-top: 270px;
   margin-left: 17%;
-
+  margin-top: 10%;
 }
 .right .share{
   width: 25px;
@@ -338,6 +337,8 @@ ul p{
 }
 .toTop{
   width: 2%;
+  height: 25px;
+  background: url(../images/down.png) center center no-repeat;
   margin: 5px auto;
   cursor: pointer;
 }
@@ -356,12 +357,58 @@ ul p{
   background: rgba(7,44,84,0.5);
 }
 .bottom2 p{
+  width: 100%;
   text-align: center;
   margin: 45px auto;
   color: #0F4C85;
   font-size: 14px;
+  float: left;
 }
-
+.content .btn{
+  display: block;
+  width: 100px;
+  height: 40px;
+  background:#00305B;
+  border-radius: 4px;
+  box-shadow: 1px 1px 3px 3px #012647;
+  color: white;
+  outline: none;
+  float: left;
+  border:none;
+  margin: 20px auto;
+}
+.close{
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  background-color: black;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-family: "Microsoft YaHei";
+}
+.cover{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left:0;
+  top:0;
+  display: none;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1000;
+}
+#showmap{
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+}
 @media screen and (max-width: 970px){
   .logo{
     width: 8%;
@@ -400,6 +447,7 @@ ul p{
   }
   .center{
     width: 100%;
+
   }
   .center .sub{
     width: 100%;
@@ -544,8 +592,13 @@ ul p{
   }
   .bottom .icon{
     width: 40%;
-    margin-top: 20%;
+    margin-top: -30%;
   }
+  input{
+    width: 50%;
+    height: auto;
+  }
+
   .bottom .content{
     width: 80%;
     margin: 30% auto;
@@ -573,5 +626,20 @@ ul p{
   }
   .toTop{
     display: none;
+  }
+  .cover{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left:0;
+    top:0;
+  }
+  #showmap{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    left:5%;
+    top:5%;
+    z-index: 999;
   }
 }
